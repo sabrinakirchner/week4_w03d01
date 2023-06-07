@@ -1,29 +1,35 @@
 //Hamster 
 
+
 class Hamster{
     constructor(owner, name, price){
     this.owner = owner;
     this.name = name;
     this.price = price;
-};
+    }
 
 wheelRun() {
-console.log("squeak squeak");
-console.log("squeak squeak");
+    console.log("squeak squeak");
+    console.log("squeak squeak");
 }
 
 eatFood(){
-    console.log("nibble nibble");
+    console.log("nibble nibble");//test
 }
 getPrice(){
     return price; 
+}
 }
 
 const hamster = new Hamster("john", "pine",15);
 console.log(hamster);
 hamster.wheelRun();
 hamster.eatFood();
-}
+
+
+
+
+//person
 
 class Person{
     constructor(name){
@@ -69,4 +75,37 @@ buyHamster(hamster){
 
 }
 }
+
+
+
+// history 
+const timmy = new Person("Tmmy"); 
+console.log(timmy.getName());
+
+for(let i=0; i<5; i++){
+    timmy.eat(); 
+}
+
+for (let i=0; i<5; i++){
+    timmy.exercise();
+}
+
+for(let i=0; i<5; i++){
+    timmy.ageUp();
+}
+
+const gus = new hamster ("Timmy","Gus",15);
+timmy.buyHamster(gus); 
+
+for (let i = 0; i<2;i++){
+    timmy.ageUp(); 
+}
+
+for(let i=0; i<2; i++){
+    timmy.eat();
+}
+for(let i=0; i<1; i++){
+    timmy.getWeight(); 
+}
+
 
