@@ -14,7 +14,7 @@ wheelRun() {
 }
 
 eatFood(){
-    console.log("nibble nibble");//test
+    console.log("nibble nibble");
 }
 getPrice(){
     return price; 
@@ -27,10 +27,7 @@ hamster.wheelRun();
 hamster.eatFood();
 
 
-
-
 //person
-
 class Person{
     constructor(name){
     this.name = name; 
@@ -107,5 +104,36 @@ for(let i=0; i<2; i++){
 for(let i=0; i<1; i++){
     timmy.getWeight(); 
 }
+
+
+//cheff class
+
+class chef{
+    constructor(name){
+    this.name =name;
+    }
+createDinner(appetizer,entree, dessert){
+    return new Dinner(appetizer, entree, dessert);
+}
+}
+
+//dinner class 
+class Dinner{
+    constructor(appetizer, entree, dessert){
+        this.appetizer=appetizer; 
+        this.entree=entree;
+        this.dessert=dessert; 
+    }
+}
+
+const Chef = new Chef("Luca");
+
+//dinner crations 
+const dinnerOne = chef.createDinner("salad","soup","chocolate flan");
+const dinnerTwo = chef.creatDinner("bread","pie","carrot cake");
+const dinnerThree= chef.creatDinner("dumplings","noodles","mochi")
+
+console.log();
+
 
 
